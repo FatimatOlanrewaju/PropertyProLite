@@ -1,0 +1,119 @@
+html {
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.container {
+    background-color: #1c296f;
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: bold;
+}
+    
+img {
+    margin-bottom: 4px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.nav {
+    float: right;
+    color: white;
+    text-align: center;
+    background-color: #1c296f;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.nav:hover {
+    background-color: white;
+    color: #1c296f;
+}
+
+.wrapper {
+    padding: 20px;
+    margin: 60px;
+    border: solid 2px;
+    border-color: #1c296f;
+}
+
+.wrapper h2 {
+    font-size: 30px;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 5px 0px 22px 0px;
+    display: inline-block;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    background-color: #ddd;
+}
+
+input[type="radio"] {
+    margin: 10px 0px 10px 0px;
+}
+
+textarea {
+    width: 95%;
+    box-sizing: border-box;
+    resize: vertical;
+    padding: 8px;
+    margin: 5px 0px 22px 0px;
+}
+
+.form-submit {
+    text-align: right;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 8px;
+    margin: auto 0px;
+    border-radius: 2px;
+}
+
+.form-cancel {
+    background-color: #ff0000;
+    color: white;
+}
+
+.form-next {
+    background-color: green;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer {
+    content:"";
+    display: table;
+    clear: both;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer h4 {
+    margin: 20px;
+}
+
+.footer hr {
+    border: 1px solid;
+    margin-bottom: 10px;
+}

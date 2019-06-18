@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans">
+    <title>Sign Up - ProjectPro Lite</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Header-->
+        <div class="header">
+            <a href="index.html"><img id="logo" src="images/propertypro-lite-image.png" alt="The PropertyPro Lite Logo: Housing with Finesse"></a>
+            <a class="nav" href="signup.html">Sign Up</a>
+            <a class="nav" href="signin.html">Sign In</a>
+        </div>
+    </div>
+
+    <section>
+        <div class="container1">
+            <div class="left">
+                <div class="reason">
+                    <h1>Sign Up for Free</h1>
+                    <p>Why You Should Sign Up:</p>
+                    <ul>
+                        <li>Create and post your property adverts for free</li>
+                        <li>Advertise your properties to various clients across the country</li>
+                        <li>Get connected to various agents easily</li>
+                        <li>View various apartments to streamline inspection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="rightbox">
+
+                    <h2>Create Account to Get Started</h2>
+                    <br>
+
+                    <form class="signup-details" action="entries.html" method="post">
+                        <div class="form-details">
+                            <label for="firstname"><b>First Name</b></label><br>
+                            <input type="text" id="firstname" placeholder="Enter first name" required>
+                        </div>
+
+                        <div class="form-details">
+                            <label for="lastname"><b>Last Name</b></label><br>
+                            <input type="text" id="lastname" placeholder="Enter last name" required>
+                        </div>
+
+                        <div class="form-details">
+                            <label for="email"><b>Email Address</b></label><br>
+                            <input type="email" id="email" placeholder="Enter email address" required>
+                        </div>
+
+                        <div class="form-details">
+                            <label for="phoneno"><b>Phone Number</b></label><br>
+                            <input type="tel" id="phoneno" placeholder="Enter phone number" required>
+                        </div>
+
+                        <div class="form-details">
+                            <label for="password"><b>Password</b></label><br>
+                            <input type="password" id="password" placeholder="Enter password" required>
+                        </div>
+
+                        <div class="form-details">
+                            <label for="re-enterPassword"><b>Re-enter Password</b></label><br>
+                            <input type="password" id="re-enterPassword" placeholder="Re-enter password" required>
+                        </div>
+
+                        <div class="form-details">
+                            <p>Account Type</p>
+                            <label for="client">
+                                <input type="radio" id="client" value="client" checked="checked">Client
+                            </label>
+                            <label for="agent">
+                                <input type="radio" id="agent" value="agent">Agent
+                            </label>
+                        </div><br>
+                    
+                        <div class="form-details">
+                            <label>
+                                <input type="checkbox" checked="checked" name="rememberme" style="margin-bottom:15px"> Remember me
+                            </label>
+                            <p>By clicking "Create Account", you agree to our <a href='#'>Terms & Privacy</a>.</p>
+                        </div>
+
+                        <div class="form-submit">
+                            <button class="create-btn" type="submit"><b>Create Account</b></button>
+                            <p>Already have an account? <a href="signin.html">Sign In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <hr>
+
+        <h4>&copy; copyright 2019 PropertyProLite all rights reserved.</h4>
+    </div>
+</body>
+
+</html>

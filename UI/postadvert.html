@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/postadvert.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans">
+    <title>Post Advert - ProjectPro Lite</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Header-->
+        <div class="header">
+            <a href="index.html"><img id="logo" src="images/propertypro-lite-image.png" alt="The PropertyPro Lite Logo: Housing with Finesse"></a>
+            <a class="nav" href="index.html">Sign Out</a>
+            <a class="nav" href="alladverts.html">All Adverts</a>
+            <a class="nav" href="profile.html">My Profile</a>
+        </div>
+    </div>
+
+    <section class="advert-body">
+        <!--New Property Post Page-->
+        <div class="wrapper">
+            <h2>Post a new property advert</h2>
+            <form class="advert-details" method="post">
+                <!--Title of Property-->
+                <div class="form-details">
+                    <label for="title"><b>Title</b></label><br>
+                    <input type="text" id="title" placeholder="e.g. Fully furninshed 3 bedroom flat" required>
+                </div>
+
+                <!--Purpose of Property-->
+                <div class="form-details">
+                    <label for="purpose"><b>Purpose</b><br>
+                        <label for="sale">
+                            <input type="radio" id="sale" checked="checked">For Sale
+                        </label><br>
+                        <label for="rent">
+                            <input type="radio" id="rent" checked="checked">For Rent
+                        </label>
+                    </label>
+                </div><br>
+
+                <!--Type of Property-->
+                <div class="form-details">
+                    <label for="property-type"><b>Property Type</b></label><br>
+                    <select id="property-type" name="property-type" required>
+                        <option value="">--select--</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="land">Land</option>
+                    </select>
+                </div>
+
+                <!--Sub-type of Property-->
+                <div class="form-details">
+                    <label for="subproperty-type"><b>Sub-Property Type</b></label><br>
+                    <select id="subproperty-type" name="subproperty-type" required>
+                        <option class="" value="">--select--</option>
+                        <option class="apartment-option" value="mini-flat">Mini Flat</option>
+                        <option class="apartment-option" value="self-contained">Self Contained</option>
+                        <option class="apartment-option" value="2-bedroom-flat">2 Bedroom Flat</option>
+                        <option class="apartment-option" value="3-bedroom-flat">3 Bedroom Flat</option>
+                        <option class="apartment-option" value="block-of-flats">Block of Flats</option>
+                        <option class="house-option" value="bungalow">Bungalow</option>
+                        <option calss="house-option" value="duplex">Duplex</option>
+                        <option class="house-option" value="mansion">Mansion</option>
+                        <option class="land-option" value="commercial">Commercial Land</option>
+                        <option class="land-option" value="residential">Residential Land</option>
+                    </select>
+                </div>
+
+                <!--Address of Property-->
+                <div class="form-details">
+                    <label for="address"><b>Full Address</b></label><br>
+                    <input type="text" id="address" placeholder="e.g. 48, Gbenga Alao Crescent, Ajasa Command, Lagos" required>
+                </div>
+
+                <!--State of Property-->
+                <div class="form-details">
+                    <label for="state"><b>State</b></label><br>
+                    <select id="state" name="state">
+                        <option value="">--select--</option>
+                        <option value="1">Abia</option>
+                        <option value="2">Abuja</option>
+                        <option value="3">Adamawa</option>
+                        <option value="4">Akwa Ibom</option>
+                        <option value="5">Anambra</option>
+                        <option value="6">Bauchi</option>
+                        <option value="7">Balyesa</option>
+                        <option value="8">Benue</option>
+                        <option value="9">Borno</option>
+                        <option value="10">Cross River</option>
+                        <option value="11">Delta</option>
+                        <option value="12">Ebonyi</option>
+                        <option value="13">Enugu</option>
+                        <option value="14">Edo</option>
+                        <option value="15">Ekiti</option>
+                        <option value="16">Gombe</option>
+                        <option value="17">Imo</option>
+                        <option value="18">Jigawa</option>
+                        <option value="19">Kaduna</option>
+                        <option value="20">Kano</option>
+                        <option value="21">Kastina</option>
+                        <option value="22">Kebbi</option>
+                        <option value="23">Kogi</option>
+                        <option value="24">Kwara</option>
+                        <option value="25">Lagos</option>
+                        <option value="26">Nasarawa</option>
+                        <option value="27">Niger</option>
+                        <option value="28">Ogun</option>
+                        <option value="29">Ondo</option>
+                        <option value="30">Osun</option>
+                        <option value="31">Oyo</option>
+                        <option value="32">Plateau</option>
+                        <option value="33">Rivers</option>
+                        <option value="34">Sokoto</option>
+                        <option value="35">Taraba</option>
+                        <option value="36">Yobe</option>
+                        <option value="37">Zamfara</option>
+                    </select>
+                </div>
+
+                <!--Locality/Area of Property-->
+                <div class="form-details">
+                    <label for="area"><b>Locality/Area</b></label><br>
+                    <input type="text" id="area" placeholder="Enter locality/area" required>
+                </div>
+
+                <!--Amount/Price of Property-->
+                <div class="form-details">
+                    <label for="amount"><b>Amount <i>(NB: annual for rented property)</i></b></label>
+                    <input type="number" id="amount" placeholder="e.g. 100000">
+                </div>
+
+                <!--Detailed Description of Property-->
+                <div class="form-details">
+                    <label for="description"><b>Description</b></label><br>
+                    <textarea type="text" id="description" rows="6" placeholder=""></textarea>
+                </div>
+
+                <!--Submit Buttons-->
+                <div class="form-submit">
+                    <button class="form-cancel" type="submit"><a href=alladverts.html>Cancel</a></button>
+                    <button class="form-next" type="submit"><a href=addpictures.html>Next >></a></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="footer">
+        <hr>
+    
+        <h4>&copy; copyright 2019 PropertyProLite all rights reserved.</h4>
+    </div>
+</body>
+
+</html>

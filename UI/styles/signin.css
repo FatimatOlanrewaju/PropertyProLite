@@ -1,0 +1,100 @@
+html {
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.container {
+    background-color: #1c296f;
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: bold;
+}
+    
+img {
+    margin-bottom: 4px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.nav {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    background-color: #1c296f;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.nav:hover {
+    background-color: white;
+    color: #1c296f;
+}
+
+.signin-container {
+    margin-top: 50px;
+}
+
+.wrapper {
+    background-color: #add8e6;
+    margin: 0px auto;
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+}
+
+.wrapper h1 {
+    text-align: center;
+}
+
+input[type="email"], input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0px 22px 0px;
+    display: inline-block;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+    outline: none;
+    background-color: #ddd;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+button {
+    background-color: #1c296f;
+    color: white;
+    width: 50%;
+    cursor: pointer;
+    padding: 5px 8px;
+    margin: auto 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.footer {
+    content:"";
+    display: table;
+    clear: both;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer h4 {
+    margin: 20px;
+}
+
+.footer hr {
+    border: 1px solid;
+    margin-bottom: 10px;
+}
