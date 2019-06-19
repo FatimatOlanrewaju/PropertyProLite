@@ -107,6 +107,7 @@ button a {
     clear: both;
     width: 100%;
     bottom: 0;
+    position: relative;
 }
 
 .footer h4 {
