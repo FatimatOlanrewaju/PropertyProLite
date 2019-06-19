@@ -59,6 +59,7 @@ img {
     position: absolute;
     width: 100%;
     bottom: 0;
+    height: 50px;
 }
 
 .footer h4 {

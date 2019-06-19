@@ -105,6 +105,8 @@ button:hover {
     clear: both;
     width: 100%;
     bottom: 0;
+    position: relative;
+    height: 50px;
 }
 
 .footer h4 {

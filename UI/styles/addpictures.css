@@ -42,7 +42,6 @@ img {
     margin: 60px;
     border: solid 2px;
     border-color: #1c296f;
-    height: 280px;
 }
 
 input {
@@ -51,12 +50,41 @@ input {
     border-radius: 2px;
 }
 
+.form-submit {
+    text-align: right;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 8px;
+    margin: auto 0px;
+    border-radius: 2px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.form-previous {
+    background-color: #1c296f;
+    color: white;
+}
+
+.form-finish {
+    background-color: green;
+    color: white;
+}
 .footer {
     content:"";
     display: table;
     clear: both;
     width: 100%;
     bottom: 0;
+    position: absolute;
+    height: 50px;
 }
 
 .footer h4 {
