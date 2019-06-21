@@ -117,22 +117,29 @@ button:hover {
 
     .nav {
         font-size: 15px;
-        padding: 15px 8px;
+        padding: 12px 8px;
         margin-top: 20px;
     }
     
     .footer {
         position: relative;
     }
-
-    img.resize {
-        height: 25%;
-        width: 25%;
-    }
 }
 
 @media only screen and  (min-width: 768px) {
+    .header a {
+        font-weight: normal;
+    }
 
+    .nav {
+        font-size: 15px;
+        padding: 12px 8px;
+        margin-top: 20px;
+    }
+    
+    .footer {
+        position: relative;
+    }
 }
 @media only screen and  (min-width: 992px) {
 
