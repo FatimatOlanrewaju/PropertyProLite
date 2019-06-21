@@ -1,0 +1,86 @@
+html {
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.container {
+    background-color: #1c296f;
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: bold;
+}
+    
+img {
+    margin-bottom: 4px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.nav {
+    float: right;
+    color: white;
+    text-align: center;
+    background-color: #1c296f;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.nav:hover {
+    background-color: white;
+    color: #1c296f;
+}
+
+.container-box {
+    margin: 50px 60px;
+    padding: 20px 30px 20px 10px;
+    text-align: center;
+}
+
+.container-picture img {
+    width: 350px;
+    height: 350px;
+}
+
+.title h1 {
+    color: #1c296f;
+    font-size: 40px;
+}
+
+.container-description {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #1c296f;
+}
+
+.agent-details {
+    background-color: #d3d3d3;
+    width: 30%;
+    margin: 20px 450px 20px;
+    padding: 20px;
+}
+
+.footer {
+    content:"";
+    display: table;
+    clear: both;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+.footer h4 {
+    margin: 20px;
+}
+
+.footer hr {
+    border: 1px solid;
+    margin-bottom: 10px;
+}
