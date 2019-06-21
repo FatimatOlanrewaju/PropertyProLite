@@ -146,4 +146,10 @@ button:hover {
     .reason p, ul {
         font-size: 10px;
     }
+
+    .left, .right {
+        float: none;
+    }
+
+
 }
