@@ -86,6 +86,10 @@ button:hover {
     background-color: black;
 }
 
+.form-submit a {
+    text-decoration: none;
+}
+
 .footer {
     content:"";
     display: table;
@@ -103,4 +107,35 @@ button:hover {
 .footer hr {
     border: 1px solid;
     margin-bottom: 10px;
+}
+
+/* Mobile devices  */
+@media only screen and  (max-width: 600px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        font-size: 10px;
+        float: right;
+        display: block;
+        padding: 8px;
+        margin-top: 10px;
+    }
+    
+    .footer {
+        position: relative;
+    }
+
+    img.resize {
+        height: 25%;
+        width: 25%;
+    }
+}
+
+@media only screen and  (min-width: 768px) {
+
+}
+@media only screen and  (min-width: 992px) {
+
 }
