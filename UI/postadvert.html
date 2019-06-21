@@ -25,7 +25,7 @@
         <!--New Property Post Page-->
         <div class="wrapper">
             <h2>Post a new property advert</h2>
-            <form class="advert-details" method="post" action="">
+            <form class="advert-details" method="post" action="/">
                 <!--Title of Property-->
                 <div class="form-details">
                     <label for="title"><b>Title</b></label><br>
@@ -134,6 +134,17 @@
                 <div class="form-details">
                     <label for="amount"><b>Amount <i>(NB: annual for rented property)</i></b></label>
                     <input type="number" id="amount" placeholder="e.g. 100000">
+                </div>
+
+                <!--Status of Property-->
+                <div class="form-details">
+                    <label for="status"><b>Status</b></label><br>
+                    <select id="status" name="status" required>
+                        <option value="">--select--</option>
+                        <option value="available">Available</option>
+                        <option value="rented">Rented</option>
+                        <option value="sold">Sold</option>
+                    </select>
                 </div>
 
                 <!--Detailed Description of Property-->
