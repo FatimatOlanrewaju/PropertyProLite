@@ -140,11 +140,51 @@ button:hover {
     }
     
     .reason h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
     
     .reason p, ul {
-        font-size: 12px;
+        font-size: 16px;
+    }
+
+    .left, .right {
+        float: none;
+        width: 100%;
+    }
+    
+    .rightbox {
+        margin: 40px;
+        padding: 20px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and  (min-width: 600px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        font-size: 20px;
+        padding: 12px 8px;
+        margin-top: 20px;
+    }
+    
+    .footer {
+        position: relative;
+    }
+
+    .reason {
+        padding: 20px;
+        margin: 15px;
+    }
+    
+    .reason h1 {
+        font-size: 22px;
+    }
+    
+    .reason p, ul {
+        font-size: 16px;
     }
 
     .left, .right {
