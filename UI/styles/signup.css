@@ -117,3 +117,33 @@ button:hover {
     border: 1px solid;
     margin-bottom: 10px;
 }
+
+/* Mobile devices  */
+@media only screen and  (max-width: 600px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        font-size: 15px;
+        padding: 15px 8px;
+        margin-top: 20px;
+    }
+    
+    .footer {
+        position: relative;
+    }
+
+    .reason {
+        padding: 10px;
+        margin: 8px;
+    }
+    
+    .reason h1 {
+        font-size: 18px;
+    }
+    
+    .reason p, ul {
+        font-size: 10px;
+    }
+}
