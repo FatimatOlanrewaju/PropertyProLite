@@ -126,13 +126,14 @@ button:hover {
     }
 }
 
-@media only screen and  (min-width: 768px) {
+/* Tablet Devices */
+@media only screen and  (min-width: 600px) {
     .header a {
         font-weight: normal;
     }
 
     .nav {
-        font-size: 15px;
+        font-size: 20px;
         padding: 12px 8px;
         margin-top: 20px;
     }
@@ -141,6 +142,19 @@ button:hover {
         position: relative;
     }
 }
-@media only screen and  (min-width: 992px) {
 
+/* Laptop/Desktop Devices */
+@media only screen and  (min-width: 992px) {
+    .header a {
+        font-weight: bold;
+    }
+
+    .nav {
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .footer {
+        position: absolute;
+    }
 }
