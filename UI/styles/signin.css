@@ -81,6 +81,11 @@ button {
     border-radius: 5px;
 }
 
+button:hover {
+    color: white;
+    background-color: black;
+}
+
 .footer {
     content:"";
     display: table;

@@ -60,10 +60,33 @@ img {
     color: #1c296f;
 }
 
+.edit-details {
+    text-align: center;
+}
+
+button {
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px;
+    background-color: #1c296f;
+    color: white;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.edit-update a {
+    text-decoration: none;
+    color: white;
+}
+
 .agent-details {
     background-color: #d3d3d3;
     width: 30%;
-    margin: 20px 450px 20px;
+    margin: 20px 410px 20px;
     padding: 20px;
 }
 
