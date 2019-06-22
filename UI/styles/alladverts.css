@@ -106,3 +106,27 @@ ul.filter-listing li {
     border: 1px solid;
     margin-bottom: 10px;
 }
+
+/* Mobile devices  */
+@media only screen and  (max-width: 600px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        font-size: 15px;
+        padding: 12px 8px;
+        margin-top: 20px;
+    }
+
+    .container-box {
+        margin: 15px 30px;
+        padding: 5px 10px 8px 5px;
+        text-align: center;
+    }
+
+    ul.filter-listing li {
+        display: inline;
+        font-size: 12px;
+    }    
+}
