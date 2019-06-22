@@ -123,7 +123,18 @@ ul.filter-listing li {
 
     ul.filter-listing li {
         font-size: 12px;
-    }    
+    }
+    
+    .container-advert {
+        height: 180px;
+        width: 80%;
+        margin: 20px; 
+    }
+
+    .container-picture img {
+        width: 180px;
+        height: 170px;
+    }
 }
 
 /* Tablet Devices */
@@ -136,6 +147,11 @@ ul.filter-listing li {
         font-size: 18px;
         padding: 12px 8px;
         margin-top: 20px;
+    }
+
+    .container-box {
+        margin: 15px 30px;
+        padding: 10px 20px 10px 5px;
     }
 
     ul.filter-listing li {
