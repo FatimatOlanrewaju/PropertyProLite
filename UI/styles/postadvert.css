@@ -118,3 +118,68 @@ button a {
     border: 1px solid;
     margin-bottom: 10px;
 }
+
+/* Mobile devices  */
+@media only screen and  (max-width: 600px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        font-size: 15px;
+        padding: 12px 5px;
+        margin-top: 20px;
+    }
+
+    .wrapper {
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .wrapper h2 {
+        font-size: 18px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and  (min-width: 600px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        font-size: 18px;
+        padding: 12px 10px;
+        margin-top: 20px;
+    }
+
+    .wrapper {
+        padding: 15px;
+        margin: 30px;
+    }
+    
+    .wrapper h2 {
+        font-size: 24px;
+    }
+}
+
+/* Laptop/Desktop Devices */
+@media only screen and  (min-width: 992px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .wrapper {
+        padding: 20px;
+        margin: 60px;
+    }
+    
+    .wrapper h2 {
+        font-size: 30px;
+    }
+}
