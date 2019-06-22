@@ -209,6 +209,29 @@ button:hover {
         margin-top: 10px;
     }
 
+    .left {
+        float: left;
+        width: 40%;
+    }
+    
+    .reason {
+        padding: 30px;
+        margin: 20px;
+    }
+    
+    .reason h1 {
+        font-size: 30px;
+    }
+    
+    .reason p, ul {
+        font-size: 18px;
+    }
+    
+    .right {
+        float: right;
+        width: 60%;
+    }
+
     .footer {
         position: relative;
     }

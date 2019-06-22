@@ -170,9 +170,27 @@ ul.filter-listing li {
     }
 
     .container-advert {
-        height: 250px;
-        width: 80%;
-        margin: 20px 130px; 
+        height: 220px;
+        width: 88%;
+        margin: 20px; 
+    }
+
+    .container-picture img {
+        width: 100px;
+        height: 180px;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+    
+    .amount {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    br {
+        content: "";
+        margin-top: 13px;
     }
 }
 
