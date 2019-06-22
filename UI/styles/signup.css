@@ -175,12 +175,12 @@ button:hover {
     }
 
     .reason {
-        padding: 20px;
-        margin: 15px;
+        padding: 25px;
+        margin: 18px;
     }
     
     .reason h1 {
-        font-size: 22px;
+        font-size: 26px;
     }
     
     .reason p, ul {
@@ -193,7 +193,23 @@ button:hover {
     }
     
     .rightbox {
-        margin: 40px;
+        margin: 45px;
+        padding: 25px;
+    }
+}
+
+/* Laptop/Desktop Devices */
+@media only screen and  (min-width: 992px) {
+    .header a {
+        font-weight: bold;
+    }
+
+    .nav {
         padding: 20px;
+        margin-top: 10px;
+    }
+
+    .footer {
+        position: relative;
     }
 }
