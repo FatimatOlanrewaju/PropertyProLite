@@ -43,11 +43,6 @@ img {
     text-align: center;
 }
 
-.container-picture img {
-    width: 350px;
-    height: 350px;
-}
-
 .title h1 {
     color: #1c296f;
     font-size: 40px;
@@ -85,9 +80,6 @@ button:hover {
 
 .agent-details {
     background-color: #d3d3d3;
-    width: 30%;
-    margin: 20px 410px 20px;
-    padding: 20px;
 }
 
 .footer {
@@ -143,5 +135,82 @@ button:hover {
         width: 70%;
         margin: 15px 30px 15px;
         padding: 15px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and  (min-width: 600px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        font-size: 18px;
+        padding: 12px 5px;
+        margin-top: 20px;
+    }
+    
+    .container-box {
+        margin: 25px 20px;
+        padding: 15px 30px 30px 10px;
+        text-align: center;
+    }
+    
+    .container-picture img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .title h1 {
+        font-size: 25px;
+    }
+
+    .container-description {
+        font-size: 16px;
+    }
+
+    .agent-details {
+        width: 50%;
+        margin: 20px 40px 20px;
+        padding: 20px;
+    }
+}
+
+/* Laptop/Desktop Devices */
+@media only screen and  (min-width: 992px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        font-size: 18px;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .container-box {
+        margin: 25px 20px;
+        padding: 15px 30px 30px 10px;
+        text-align: center;
+    }
+
+    .container-picture img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .container-description {
+        font-size: 18px;
+    }
+    
+
+    .agent-details {
+        width: 40%;
+        margin: 20px 370px 20px;
+        padding: 20px;
     }
 }

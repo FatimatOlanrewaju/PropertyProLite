@@ -203,6 +203,8 @@ button:hover {
 
     .nav {
         font-size: 18px;
+        padding: 20px;
+        margin-top: 10px;
     }
 
     .left {

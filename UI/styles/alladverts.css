@@ -196,6 +196,11 @@ ul.filter-listing li {
 
 /* Laptop/Desktop Devices */
 @media only screen and  (min-width: 992px) {
+    .nav {
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
     .container-box {
         margin: 30px 50px 30px;
         padding: 20px 30px 20px 10px;

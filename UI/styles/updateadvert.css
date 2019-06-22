@@ -118,3 +118,25 @@ button a {
     border: 1px solid;
     margin-bottom: 10px;
 }
+
+/* Mobile devices  */
+@media only screen and  (max-width: 600px) {
+    .header a {
+        font-weight: normal;
+    }
+
+    .nav {
+        font-size: 15px;
+        padding: 12px 5px;
+        margin-top: 20px;
+    }
+
+    .wrapper {
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .wrapper h2 {
+        font-size: 18px;
+    }
+}
