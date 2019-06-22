@@ -127,13 +127,13 @@ ul.filter-listing li {
     
     .container-advert {
         height: 180px;
-        width: 80%;
-        margin: 20px; 
+        width: 100%;
+        margin: 10px; 
     }
 
     .container-picture img {
-        width: 180px;
-        height: 170px;
+        width: 80px;
+        height: 150px;
     }
 }
 
