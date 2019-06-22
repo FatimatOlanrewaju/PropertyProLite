@@ -126,6 +126,7 @@ ul.filter-listing li {
         height: 180px;
         width: 95%;
         margin: 10px; 
+        padding: 0px;
     }
 
     .container-picture img {
