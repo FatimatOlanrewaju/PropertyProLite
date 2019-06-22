@@ -14,7 +14,6 @@ body {
 
 .header a {
     text-decoration: none;
-    font-weight: bold;
 }
     
 img {
@@ -63,8 +62,6 @@ img {
 
 .rightbox {
     background-color: #add8e6;
-    margin: 50px;
-    padding: 20px;
 }
 
 input[type=text], input[type=email], input[type=tel], input[type=password] {
@@ -201,12 +198,11 @@ button:hover {
 /* Laptop/Desktop Devices */
 @media only screen and  (min-width: 992px) {
     .header a {
-        font-weight: bold;
+        font-weight: normal;
     }
 
     .nav {
-        padding: 20px;
-        margin-top: 10px;
+        font-size: 18px;
     }
 
     .left {
@@ -230,6 +226,11 @@ button:hover {
     .right {
         float: right;
         width: 60%;
+    }
+    
+    .rightbox {
+        margin: 50px;
+        padding: 20px;
     }
 
     .footer {
