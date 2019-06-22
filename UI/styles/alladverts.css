@@ -118,11 +118,10 @@ ul.filter-listing li {
 
     .container-box {
         margin: 15px 30px;
-        padding: 5px 10px 8px 5px;
+        padding: 5px 5px;
     }
 
     ul.filter-listing li {
-        display: inline;
         font-size: 12px;
     }    
 }
