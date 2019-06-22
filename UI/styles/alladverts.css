@@ -62,9 +62,6 @@ ul.filter-listing li {
 .container-advert {
     border: solid;
     border-color: #d3d3d3;
-    height: 250px;
-    width: 80%;
-    margin: 20px 130px; 
 }
 
 .container-picture img {
@@ -127,13 +124,22 @@ ul.filter-listing li {
     
     .container-advert {
         height: 180px;
-        width: 100%;
+        width: 85%;
         margin: 10px; 
     }
 
     .container-picture img {
-        width: 50px;
-        height: 100px;
+        width: 80px;
+        height: 160px;
+    }
+
+    .title h2 {
+        font-size: 25px;
+    }
+    
+    .amount {
+        font-size: 15px;
+        font-weight: bold;
     }
 }
 
@@ -157,6 +163,12 @@ ul.filter-listing li {
     ul.filter-listing li {
         font-size: 16px;
     }
+
+    .container-advert {
+        height: 250px;
+        width: 80%;
+        margin: 20px 130px; 
+    }
 }
 
 /* Laptop/Desktop Devices */
@@ -166,6 +178,16 @@ ul.filter-listing li {
         padding: 20px 30px 20px 10px;
     }
 
+    .container-advert {
+        height: 250px;
+        width: 80%;
+        margin: 20px 130px; 
+    }
+
+    .container-advert img {
+        width: 250px;
+        height: 230px;
+    }
     ul.filter-listing li {
         font-size: 18px;
     }
