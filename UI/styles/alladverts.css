@@ -124,21 +124,21 @@ ul.filter-listing li {
     
     .container-advert {
         height: 180px;
-        width: 85%;
+        width: 95%;
         margin: 10px; 
     }
 
     .container-picture img {
         width: 80px;
-        height: 160px;
+        height: 180px;
     }
 
     .title h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .amount {
-        font-size: 15px;
+        font-size: 12px;
         font-weight: bold;
     }
 }
