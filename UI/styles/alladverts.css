@@ -47,7 +47,7 @@ img {
 }
 
 ul.filter-listing li {
-    display: inline;
+    display: inline-block;
 }
 
 .filter-listing a {
@@ -118,7 +118,7 @@ ul.filter-listing li {
 
     .container-box {
         margin: 15px 30px;
-        padding: 5px 5px;
+        padding: 10px;
     }
 
     ul.filter-listing li {
