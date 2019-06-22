@@ -134,4 +134,8 @@ button:hover {
     .title h1 {
         font-size: 20px;
     }
+
+    .container-description {
+        font-size: 16px;
+    }
 }
