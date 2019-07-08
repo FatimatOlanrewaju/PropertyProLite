@@ -5,8 +5,6 @@ import app from '../app';
 
 chai.use(chaiHttp);
 
-
-
 const { should, expect } = chai;
 should();
 
