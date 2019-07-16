@@ -10,7 +10,7 @@ class UserController {
       });
     }
 
-    const checkUserExists = users.find(user => user.email === req.body.email);npm
+    const checkUserExists = users.find(user => user.email === req.body.email);
     if (checkUserExists) {
       return res.status(409).send({
         status: 409,
