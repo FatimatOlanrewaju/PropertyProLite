@@ -2,7 +2,7 @@ import Property from '../models/property';
 
 class propertyController{
     postProperty(req, res) {
-        if (!req.body.state && !req.body.city && !req.body.address && !req.body.type && !req.body.image_url) {
+        if (!req.body.state && !req.body.city && !req.body.address && !req.body.type && !req.body.price && !req.body.image_url) {
             return res.status(400).json({
               status: 400,
               message: 'All fields are required',
