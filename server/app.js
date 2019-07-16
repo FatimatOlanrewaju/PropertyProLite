@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import logger from 'morgan';
-import Router from './routes/users'
+import Router from './routes/index';
 
 const app = express();
 
