@@ -25,7 +25,7 @@ describe('Test for Update Property Route', () => {
   it('should update property data', (done) => {
     const id = 1;
     chai.request(app)
-      .post('/api/v1/auth/signin')
+      .patch(`/api/v1/property/${id}`)
       .end((err, res) => {
         expect(res.status).to.equal(200);
         expect(res.body.message).to.equal('Property updated successfully');
@@ -34,3 +34,17 @@ describe('Test for Update Property Route', () => {
       });
   });
 });
+
+describe('Test for Mark Posted Advert Route', () => {
+    it('should mark posted advert as sold', (done) => {
+      const id = 1;
+      chai.request(app)
+        .patch(`/api/v1/property/${id}/sold`)
+        .end((err, res) => {
+          expect(res.status).to.equal(200);
+          expect(res.body.message).to.equal('Property marked as sold successfully');
+          expect(res.body).to.be.an('object');
+          done();
+        });
+    });
+  });
