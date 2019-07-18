@@ -66,6 +66,20 @@ class propertyController{
       data: markSold,
     });
   }
+
+  deleteProperty(req, res) {
+    const property = propertyData.find(property => property.id === parseFloat(req.params.id));
+    if(!property) {
+      return res.status(404).json({
+        status: 404,
+        message: 'Property does not exist',
+      });
+    }
+    return res.status(200).json({
+      status: 200,
+      message: 'Property advert deleted sucessfully',
+    });
+  }
 }
 
 export default new propertyController;
