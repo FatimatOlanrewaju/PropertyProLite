@@ -58,7 +58,7 @@ class propertyController{
     }
 
     const markSold = {
-      status: property.status || req.body.status,
+      status: req.body.status || property.status,
     };
     return res.status(200).json({
       status: 200,
