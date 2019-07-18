@@ -1,4 +1,4 @@
-const property = [
+const propertyData = [
   {
     id: 1,
     owner: 1,
@@ -65,4 +65,4 @@ const property = [
     image_url: 'url'
   },
 ];
-  export default property; 
+  export default propertyData; 
