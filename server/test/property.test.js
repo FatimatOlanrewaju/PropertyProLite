@@ -50,15 +50,29 @@ describe('Test for Mark Posted Advert Route', () => {
 });
 
 describe('Test for Delete Posted Advert Route', () => {
-    it('should delete posted advert by id', (done) => {
-      const id = 1;
-      chai.request(app)
-        .delete(`/api/v1/property/${id}`)
-        .end((err, res) => {
-          expect(res.status).to.equal(200);
-          expect(res.body.message).to.equal('Property advert deleted successfully');
-          expect(res.body).to.be.an('object');
-          done();
-        });
-    });
+ it('should delete posted advert by id', (done) => {
+    const id = 1;
+    chai.request(app)
+      .delete(`/api/v1/property/${id}`)
+      .end((err, res) => {
+        expect(res.status).to.equal(200);
+        expect(res.body.message).to.equal('Property advert deleted successfully');
+        expect(res.body).to.be.an('object');
+        done();
+      });
   });
+});
+
+describe('Get all properties Route', () => {
+    it('should get all property adverts', (done) => {
+       const id = 1;
+       chai.request(app)
+         .get('/api/v1/property')
+         .end((err, res) => {
+           expect(res.status).to.equal(200);
+           expect(res.body.message).to.equal('All property adverts gotten successfully');
+           expect(res.body).to.be.an('object');
+           done();
+         });
+     });
+   });

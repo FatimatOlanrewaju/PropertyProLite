@@ -80,6 +80,21 @@ class propertyController{
       message: 'Property advert deleted sucessfully',
     });
   }
+
+  getAllProperty(req, res) {
+    const allProperty = propertyData;
+    if(!allProperty) {
+      return res.status(404).json({
+        status: 404,
+        message: 'No properties exist',
+      });
+    }
+    return res.status(200).json({
+      status: 200,
+      message: 'All property advert gotten sucessfully',
+      data: allProperty,
+    });
+  }
 }
 
 export default new propertyController;
