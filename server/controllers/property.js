@@ -31,7 +31,6 @@ class propertyController{
       id: propertyData.id,
       price: property.price || req.body.price,
       address: property.address || req.body.address,
-      status: property.status || req.body.status,
       state: property.state || req.body.state,
       type: property.type || req.body.type,
       city: property.city || req.body.city,
@@ -40,6 +39,31 @@ class propertyController{
       status: 200,
       message: 'Property updated sucessfully',
       data: editProperty,
+    });
+  }
+
+  markPropertyAsSold(req, res) {
+    const property = propertyData.find(property => property.id === parseFloat(req.params.id));
+    if(!property) {
+      return res.status(404).json({
+        status: 404,
+        message: 'Property does not exist',
+      });
+    }
+    if(!property.status) {
+      return res.status(404).json({
+        status: 404,
+        message: 'Property status is required',
+      });
+    }
+
+    const markSold = {
+      status: req.body.status || property.status,
+    };
+    return res.status(200).json({
+      status: 200,
+      message: 'Property marked as sold sucessfully',
+      data: markSold,
     });
   }
 }
