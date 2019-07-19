@@ -111,8 +111,7 @@ class propertyController{
       message: 'All property advert gotten successfully',
       data: response,
     });
-
-    
+  }
   
     /* const propertyByType = propertyData.find(property => property.type === type);
     if(!propertyByType) {
@@ -128,6 +127,20 @@ class propertyController{
         message: 'Property of specific type fetched successfully',
       });
     } */
+
+  getSpecificProperty(req, res) {
+    const property = propertyData.find(property => property.id === parseFloat(req.params.id));
+    if(!property) {
+      return res.status(404).json({
+        status: 404,
+        message: 'Property does not exist',
+      });
+    }
+    return res.status(200).json({
+      status: 200,
+      message: 'Property advert fetched successfully',
+      data: property,
+    });
   }
 }
 
