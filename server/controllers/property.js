@@ -1,5 +1,6 @@
 import Property from '../models/property';
 import propertyData from '../data/property.data';
+import property from '../models/property';
 
 class propertyController{
    postProperty(req, res) {
@@ -37,7 +38,7 @@ class propertyController{
     };
     return res.status(200).json({
       status: 200,
-      message: 'Property updated sucessfully',
+      message: 'Property updated successfully',
       data: editProperty,
     });
   }
@@ -62,7 +63,7 @@ class propertyController{
     };
     return res.status(200).json({
       status: 200,
-      message: 'Property marked as sold sucessfully',
+      message: 'Property marked as sold successfully',
       data: markSold,
     });
   }
@@ -77,7 +78,7 @@ class propertyController{
     }
     return res.status(200).json({
       status: 200,
-      message: 'Property advert deleted sucessfully',
+      message: 'Property advert deleted successfully',
     });
   }
 
@@ -89,11 +90,44 @@ class propertyController{
         message: 'No properties exist',
       });
     }
+
+    //For properties of specific type
+    let response = [];
+    console.log(req.query)
+    if (typeof req.query.type !== 'undefined') {
+      allProperty.filter((property) => {
+        if(property.type.toString() === req.query.type) {
+          response.push(property);
+        }
+      });
+    }
+    
+    if(Object.keys(req.query).length === 0) {
+      response = allProperty;
+    }
+    
     return res.status(200).json({
       status: 200,
-      message: 'All property advert gotten sucessfully',
-      data: allProperty,
+      message: 'All property advert gotten successfully',
+      data: response,
     });
+
+    
+  
+    /* const propertyByType = propertyData.find(property => property.type === type);
+    if(!propertyByType) {
+      return res.status(404).json({
+        status: 404,
+        message: 'Could not find anything that matches filter',
+      });
+    }
+
+    if(propertyByType) {
+      return res.status(200).json({
+        status: 200,
+        message: 'Property of specific type fetched successfully',
+      });
+    } */
   }
 }
 
