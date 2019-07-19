@@ -8,5 +8,6 @@ router.patch('/property/:id', propertyController.updateProperty);
 router.patch('/property/:id/sold', propertyController.markPropertyAsSold);
 router.delete('/property/:id', propertyController.deleteProperty);
 router.get('/property', propertyController.getAllProperty);
+router.get('/property/:id', propertyController.getSpecificProperty);
 
 export default router;
